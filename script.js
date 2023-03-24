@@ -7,3 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+$('.navbar-toggler').on('click', function() {
+    $(this).toggleClass('active');
+  });
