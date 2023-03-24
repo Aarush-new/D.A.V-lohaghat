@@ -6,23 +6,40 @@
     <title>D.A.V. Lohaghat School</title>
     <link rel="icon" href="logo1.png" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery and Bootstrap JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo1.png" alt="D.A.V. Lohaghat School Logo">
-            <h1>D.A.V. Lohaghat School</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="logo1.png" alt="D.A.V. Lohaghat School Logo" class="logo">
+            <a class="navbar-brand" href="#">D.A.V. Lohaghat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#programs">Programs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#addmissions">Admissions</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -30,7 +47,9 @@
             <h2>About Us</h2>
             <p>Welcome to D.A.V. Lohaghat School, a school located in Uttarkhand, India that provides quality education from nursery to class 12.</p>
             <p>Our mission is to provide a nurturing environment where students can develop both academically and personally, and become responsible citizens of society.</p>
+            <a href="https://saras.cbse.gov.in/SARAS/AFFILIATEDLIST/AFFLICATIONDETAILS/3530260" target="_blank" class="btn btn-info">More Information</a>
         </section>
+
 
         <section id="programs">
             <h2>Programs</h2>
@@ -40,7 +59,6 @@
                 <li>Middle School (Class 6-8)</li>
                 <li>High School (Class 9-12)</li>
             </ul>
-            <a href="https://saras.cbse.gov.in/SARAS/AFFILIATEDLIST/AFFLICATIONDETAILS/3530260" target="_blank" class="button">More Information</a>
         </section>
 
         <section id="admissions">
@@ -60,6 +78,7 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+        </section>
     </main>
 
     <footer>
